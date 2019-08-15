@@ -398,6 +398,20 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer {
   padding: 3em 3em 6em 3em;
   clear: both; }
+  #fh5co-about #portfolionav, #fh5co-about #newwork,
+  #fh5co-services #portfolionav,
+  #fh5co-services #newwork,
+  #fh5co-contact #portfolionav,
+  #fh5co-contact #newwork,
+  #fh5co-work #portfolionav,
+  #fh5co-work #newwork,
+  #fh5co-blog #portfolionav,
+  #fh5co-blog #newwork,
+  #fh5co-counter #portfolionav,
+  #fh5co-counter #newwork,
+  #fh5co-footer #portfolionav,
+  #fh5co-footer #newwork {
+    padding: 3em 10em 6em 10em !important; }
   @media screen and (max-width: 768px) {
     #fh5co-about,
     #fh5co-services,
@@ -448,27 +462,28 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 270px;
+  height: 100px;
   width: 100%;
   display: table;
   overflow: hidden;
   margin-bottom: 30px; }
   @media screen and (max-width: 768px) {
     .work {
-      height: 400px; } }
+      height: 100px; } }
   @media screen and (max-width: 480px) {
     .work {
-      height: 270px; } }
+      height: 100px; } }
   .work .desc {
     display: table-cell;
     vertical-align: middle;
-    height: 270px;
+    height: 100px;
     background: #fff;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
     .work .desc h3 {
+      color: #ffbf00;
       font-size: 20px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       transition: transform 0.3s, opacity 0.3s;
@@ -494,8 +509,10 @@ h1, h2, h3, h4, h5, h6, figure {
           -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); } }
   .work:hover .desc {
+    background-color: #ffbf00;
     opacity: 1; }
     .work:hover .desc h3 {
+      color: #fff;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
     .work:hover .desc span {
